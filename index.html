@@ -26,7 +26,7 @@
 					<li><a href="#">Nav Link 6</a></li>
 					<li><a href="#">Nav Link 7</a></li>
 					<!-- Buttons for Task 3 and Task 4 should be placed here -->
-					
+					<button type="button" onclick="toggle()">Toggle</button>
 				</ul>
 			</div>
 		</div>
@@ -63,13 +63,52 @@
 
 					<h3>Task 1 - The Image</h3>
 					<img onClick = "functionName()" src="assets/img/compIcon.png" id="imageTask1"><br />
-					<button style="display:none" id="buttonTask1">Click Me</button>
+					<button type ="button" onclick="toggle()">Toggle</button>
+					<script>
+						function toggle() {
+
+							const image = document.getElementById("imageTask1");
+
+
+							if (image.style.display === "block"){
+								image.style.display = "none";
+							} else {
+								image.style.display = "block";
+							}
+						}
+					</script>
+
+
+
+
+
 					<hr>
 										
 					<h3>Task 2 - The Table</h3>
 					<!-- Buttons for this task should be entered before the table tag. -->
-					
-					
+					<button type="button" onclick="backgroundChange()">Red</button>
+					<button type="button" onclick="backgroundChange()">Blue</button>
+					<button type="button" onclick="backgroundChange()">Green</button>
+
+					<script>
+						//document.getElementById("table").style.backgroundColor = "blue";
+
+						// Access to the HTML Element
+						table = document.getElementById("table");
+						counter = 0;
+
+						function backgroundChange(){
+							if (counter % 3 === 0){
+								table.style.backgroundColor = "red";
+							}else{
+								table.style.backgroundColor = "blue";
+							}else{
+								table.style.backgroundColor = "green"
+							}
+							counter++;
+
+						}
+					</script>
 					<table class="table table-striped">
 						<thead>
 							<tr>
