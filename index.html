@@ -26,7 +26,27 @@
 					<li><a href="#">Nav Link 6</a></li>
 					<li><a href="#">Nav Link 7</a></li>
 					<!-- Buttons for Task 3 and Task 4 should be placed here -->
-					<button type="button" onclick="toggle()">Toggle</button>
+					<button onclick="displayMessage()">Click me</button>
+					<script>
+						function displayMessage() {
+							alert("I clicked it!");
+						}
+					</script>
+
+
+					<script>
+						function dissappear(){
+							document.getElementById("goodbye").style.display = "none"
+						}
+						function appear(){
+							document.getElementById("Welcome back").innerHTML = "block"
+					</script>
+					<script>
+
+					</script>
+
+
+
 				</ul>
 			</div>
 		</div>
@@ -90,6 +110,9 @@
 					<button type="button" onclick="backgroundChange()">Blue</button>
 					<button type="button" onclick="backgroundChange()">Green</button>
 
+
+
+
 					<script>
 						//document.getElementById("table").style.backgroundColor = "blue";
 
@@ -100,11 +123,19 @@
 						function backgroundChange(){
 							if (counter % 3 === 0){
 								table.style.backgroundColor = "red";
+
+
+
 							}else{
 								table.style.backgroundColor = "blue";
+
 							}else{
-								table.style.backgroundColor = "green"
+								table.style.backgroundColor = "green";
+
+
+
 							}
+
 							counter++;
 
 						}
@@ -166,7 +197,9 @@
 							<td colspan="2"><button>Submit</button></td>
 						</tr>
 					</table>
-					
+					<form>
+
+
 					
 				</div>
 				<div class="aside">
