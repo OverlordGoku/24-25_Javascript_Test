@@ -49,7 +49,9 @@
 					
 				<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Navigation Button Example</title> </head> <body> <nav> <button id="clearButton">Clear</button> </nav> <div id="content"></div> <script src="script.js"></script> </body> </html>
 				<script>
-					document.getElementById('clearButton').addEventListener('click', function() { // Create a new div element var newPage = document.createElement('div'); newPage.textContent = "New page has been created"; // Clear the existing content and append the new page var contentDiv = document.getElementById('content'); contentDiv.innerHTML = ''; contentDiv.appendChild(newPage); });
+					document.getElementById('clearButton').addEventListener('click', function() { 
+						// Create a new div element var newPage = document.createElement('div'); newPage.textContent = "New page has been created"; 
+						// Clear the existing content and append the new page var contentDiv = document.getElementById('content'); contentDiv.innerHTML = ''; contentDiv.appendChild(newPage); });
 				<script/>
 												</ul>
 			</div>
@@ -219,3 +221,5 @@
 		</div>
 	</body>
 </html>
+
+//Sources JavaScript Cheat Sheet, Web3Page Javascript
